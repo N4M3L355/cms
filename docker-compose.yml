@@ -24,3 +24,8 @@ services:
       - "traefik.frontend.rule=Host:www.havrlant.xn--krl-fla.com, havrlant.xn--krl-fla.com"
       - "traefik.docker.network=traefik_default"
 
+
+networks:
+  default:
+    external:
+      name: traefik_default
