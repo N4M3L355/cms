@@ -45,7 +45,7 @@ NEWSCHEMA('Posts', function(schema) {
 			filter.fields('description');
 		}
 
-		filter.fields('id,template,category,name,dtcreated,dtupdated,date,linker,pictures,summary,ispublished,signals,author,template,type,language');
+		filter.fields('id,description,template,category,name,dtcreated,dtupdated,date,linker,pictures,summary,ispublished,signals,author,template,type,language');
 		filter.gridsort(opt.sort || 'date_desc');
 		filter.callback($.callback);
 	});
