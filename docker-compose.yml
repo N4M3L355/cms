@@ -18,7 +18,7 @@ services:
       - ./views:/app/views
       - ./index.js.json:/app/index.js.json
     ports:
-      - "80:8000"
+      - "8000:80"
 #    env_file: .env
     labels:
       - "traefik.frontend.rule=Host:www.havrlant.xn--krl-fla.com, havrlant.xn--krl-fla.com"
