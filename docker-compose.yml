@@ -5,7 +5,7 @@ services:
     build: .
     image: havrlant
     restart: on-failure
-    command: node index.js
+    command: npm start
     volumes:
       - ./controllers:/app/controllers
       - ./databases:/app/databases
