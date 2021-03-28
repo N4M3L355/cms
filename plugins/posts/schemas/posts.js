@@ -7,8 +7,8 @@ NEWSCHEMA('Posts', function(schema) {
 	schema.define('type', ['html', 'markdown']);
 	schema.define('name', String, true);
 	schema.define('author', 'String(30)', true);
-	schema.define('description', 'String(300)');
-	schema.define('summary', 'String(500)');
+	schema.define('description', 'String(2000)');
+	schema.define('summary', 'String(2000)');
 	schema.define('keywords', 'String(200)');
 	schema.define('language', String);              // Only information
 	schema.define('search', 'String(1000)');
