@@ -1592,7 +1592,7 @@
 				if (!elheight.length)
 					return self.resize(500);
 				var h = navigator.userAgent.indexOf('Safari') === -1 ? $(contents).find('body')[0].scrollHeight : elheight.offset().top + 80;
-				iframe.css({ height: h });
+				//iframe.css({ height: h });
 				width = contents.width();
 				setTimeout(function() {
 					SETTER('form/resize');
